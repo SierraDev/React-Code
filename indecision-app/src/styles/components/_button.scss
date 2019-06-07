@@ -1,0 +1,70 @@
+// big button
+.big-button{
+    background: $bright-orange;
+    border: none;
+    box-shadow: 0 .6rem darken($bright-orange, 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $large-size;
+    margin-bottom: $med-size;
+    padding: 2.4rem;
+    width: 100%
+}
+.big-button:focus {
+    outline: none;
+}
+
+.big-button:active{
+    box-shadow: 0 .3rem darken($bright-orange, 10%);
+    transform: translateY(.2rem);
+    transition: .5s, all ease;
+    outline: none;
+    border: none;
+}
+
+.big-button:disabled{
+    opacity: .5;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xlarge-size;
+    }
+}
+
+//button
+button{
+    background: $bright-orange;
+    border: none;
+    color: white;
+    padding: $small-size;
+}
+
+#add-option {
+    background: $bright-orange;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: $small-size;
+    box-shadow: 0 .4rem darken($bright-orange, 10%);
+}
+
+#add-option:active{
+    transform: translateY(.1rem);
+    transition: .2s, all ease;
+    outline: none;
+    border: none;
+    box-shadow: 0 .2rem darken($bright-orange, 10%);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $pale-orange;
+    padding: 0;
+}
+
